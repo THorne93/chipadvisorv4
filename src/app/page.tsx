@@ -8,7 +8,7 @@ export default async function Page() {
   const stats = await getStats();
   return (
     <div>
-      {/* I need a front page stats component and a list component (that features in every slug) */}
+      <div className="text-red-500 font-bold text-3xl">TAILWIND TEST</div>
       <Suspense fallback={<div className="text-center p-10">Loading stats...</div>}>
         <FrontPageStats {...stats} />
       </Suspense>
